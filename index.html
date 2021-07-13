@@ -21,47 +21,51 @@
           <div class="col-6">
             <div class="mb-3" id="destiny-div">
                 <label for="InputDestiny" class="form-label">Destiny</label>
-                <input type="number" min="1" step="any" class="form-control" id="InputDestiny" placeholder="Destiny">
+                <input type="text" class="form-control" id="InputDestiny" placeholder="Destiny">
             </div>
-            <form action="">
+            <form action="" id="formCalc">
             <div class="mb-3" id="budget-div">
                 <label for="InputDestiny" class="form-label">Budget</label>
-                <input type="number" min="1" step="any" class="form-control" id="InputDestiny" placeholder="Budget">
+                <input type="number" min="1" step="any" class="form-control" id="InputBudget" placeholder="Budget">
             </div>
             <div class="mb-3" id="accommodation-div">
-                <label for="InputDestiny" class="form-label">accommodation</label>
-                <input type="number" min="1" step="any" class="form-control" id="InputDestiny" placeholder="accommodation">
+                <label for="InputDestiny" class="form-label">Accommodation</label>
+                <input type="number" min="1" step="any" class="form-control" id="InputAccommodation" placeholder="Accommodation">
             </div>
             <div class="mb-3" id="transport-div">
-                <label for="InputDestiny" class="form-label">transport</label>
-                <input type="number" min="1" step="any" class="form-control" id="InputDestiny" placeholder="transport">
+                <label for="InputDestiny" class="form-label">Transport</label>
+                <input type="number" min="1" step="any" class="form-control" id="InputTransport" placeholder="Transport">
             </div>
             <div class="mb-3" id="food-div">
-                <label for="InputDestiny" class="form-label">food</label>
-                <input type="number" min="1" step="any" class="form-control" id="InputDestiny" placeholder="food">
+                <label for="InputDestiny" class="form-label">Food</label>
+                <input type="number" min="1" step="any" class="form-control" id="InputFood" placeholder="Food">
             </div>
             <div class="mb-3" id="tours-div">
-                <label for="InputDestiny" class="form-label">tours</label>
-                <input type="number" min="1" step="any" class="form-control" id="InputDestiny" placeholder="tours">
+                <label for="InputDestiny" class="form-label">Tours</label>
+                <input type="number" min="1" step="any" class="form-control" id="InputTours" placeholder="Tours">
             </div>
             <div class="mb-3" id="shopping-div">
-                <label for="InputDestiny" class="form-label">shopping</label>
-                <input type="number" min="1" step="any" class="form-control" id="InputDestiny" placeholder="shopping">
+                <label for="InputDestiny" class="form-label">Shopping</label>
+                <input type="number" min="1" step="any" class="form-control" id="InputShopping" placeholder="Shopping">
             </div>
             <div class="mb-3" id="others-div">
-                <label for="InputDestiny" class="form-label">others</label>
-                <input type="number" min="1" step="any" class="form-control" id="InputDestiny" placeholder="others">
+                <label for="InputDestiny" class="form-label">Others</label>
+                <input type="number" min="1" step="any" class="form-control" id="InputOthers" placeholder="Others">
             </div>
             <button type="submit" class="btn btn-info">Calculate</button>
         </form> </div>
+
+        
         <div class="col">
             <h2>results</h2>
             <div class="row">
+                <div class="column">Budget <span id="spanBudget">Budget$$</span>
+                </div>
+                <div class="column">expense <span id="spanExpense">expense$$</span></div>
+                <div class="column">balance <span id="spanBalance">balance$$</span></div>
             </div>
-                <div class="column">Budget</div>
-                <div class="column">expense</div>
-                <div class="column">balance</div>
             </div>
+       
             
         </div>
       </div>
