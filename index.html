@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Travel-budget</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-dark bg-dark">
+        <span class="navbar-brand mb-0 h1">Travel-budget</span>
+    </nav>
+    <div class="container-sm" id="container-div">
+        <!-- Content here -->
+      <div class="row">
+          <div class="col-6">
+            <div class="mb-3" id="destiny-div">
+                <label for="InputDestiny" class="form-label">Destiny</label>
+                <input type="number" min="1" step="any" class="form-control" id="InputDestiny" placeholder="Destiny">
+            </div>
+            <form action="">
+            <div class="mb-3" id="budget-div">
+                <label for="InputDestiny" class="form-label">Budget</label>
+                <input type="number" min="1" step="any" class="form-control" id="InputDestiny" placeholder="Budget">
+            </div>
+            <div class="mb-3" id="accommodation-div">
+                <label for="InputDestiny" class="form-label">accommodation</label>
+                <input type="number" min="1" step="any" class="form-control" id="InputDestiny" placeholder="accommodation">
+            </div>
+            <div class="mb-3" id="transport-div">
+                <label for="InputDestiny" class="form-label">transport</label>
+                <input type="number" min="1" step="any" class="form-control" id="InputDestiny" placeholder="transport">
+            </div>
+            <div class="mb-3" id="food-div">
+                <label for="InputDestiny" class="form-label">food</label>
+                <input type="number" min="1" step="any" class="form-control" id="InputDestiny" placeholder="food">
+            </div>
+            <div class="mb-3" id="tours-div">
+                <label for="InputDestiny" class="form-label">tours</label>
+                <input type="number" min="1" step="any" class="form-control" id="InputDestiny" placeholder="tours">
+            </div>
+            <div class="mb-3" id="shopping-div">
+                <label for="InputDestiny" class="form-label">shopping</label>
+                <input type="number" min="1" step="any" class="form-control" id="InputDestiny" placeholder="shopping">
+            </div>
+            <div class="mb-3" id="others-div">
+                <label for="InputDestiny" class="form-label">others</label>
+                <input type="number" min="1" step="any" class="form-control" id="InputDestiny" placeholder="others">
+            </div>
+            <button type="submit" class="btn btn-info">Calculate</button>
+        </form> </div>
+        <div class="col">
+            <h2>results</h2>
+            <div class="row">
+            </div>
+                <div class="column">Budget</div>
+                <div class="column">expense</div>
+                <div class="column">balance</div>
+            </div>
+            
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

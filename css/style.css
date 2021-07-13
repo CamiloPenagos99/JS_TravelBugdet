@@ -1,0 +1,47 @@
+#destiny-div{
+    background-color: #1B9AAA;
+}
+
+body{
+    background-color: #0E273C;
+}
+
+#budget-div{
+    background-color: #C3DBC5;
+}
+
+#container-div{
+    padding: 5px;
+}
+
+.navbar{
+    
+}
+
+.container-sm{
+    padding: 10p;
+}
+
+label{
+    padding: 5px;
+}
+
+#accommodation-div,
+#transport-div,
+#food-div,
+#tours-div,
+#shopping-div,
+#others-div{
+    background-color: #ce4c61;
+}
+
+span{
+    padding: 10px;
+}
+
+form{
+    padding: 12px;
+    border-radius: 5px;
+    background-color: #212529;
+}
+

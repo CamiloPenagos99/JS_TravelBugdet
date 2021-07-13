@@ -1,0 +1,2 @@
+
+//Obtenet objeto formulario
