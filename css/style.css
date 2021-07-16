@@ -16,10 +16,6 @@ body{
     padding: 5px;
 }
 
-.navbar{
-    
-}
-
 .container-sm{
     padding: 10p;
 }
@@ -56,9 +52,10 @@ h2{
 #box-result{
     margin-top: 45px;
     padding: 15px;
-    background-color:#ccc;
-    border-radius: 5px;
-    box-shadow: 2px 2px 10px #ccc;
+    background-color:rgb(213, 231, 231);
+    background: linear-gradient(to right, rgb(213, 231, 231), rgb(205, 211, 211));
+    border-radius: 7px;
+    box-shadow: 2px 2px 10px rgb(95, 100, 100);
 }
 
 p{
@@ -72,5 +69,9 @@ span{
     padding: 10px;
     font-weight: normal;
     font-size: 28px;
+}
+
+#box-result p{
+    text-align: center;
 }
 

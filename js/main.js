@@ -21,6 +21,9 @@ let food = document.getElementById("InputFood").value;
 let tours = document.getElementById("InputTours").value;
 let shopping = document.getElementById("InputShopping").value;
 let other = document.getElementById("InputOthers").value;
+if(other==""){
+    other=0;
+}
 
 valuesForm = {destiny,budgetVal,accommodation,transport,food,tours,shopping,other}
 return valuesForm;
@@ -59,7 +62,15 @@ function printResult(){
     budgetUi.innerText="$" + budget;
     let expenseUi = document.getElementById("spanExpense");
     expenseUi.innerText= "$" + expenses;
+
     let balanceUi = document.getElementById("spanBalance");
+    if(balance>0){
+        balanceUi.style.color= "#678D58";
+    }
+    else{
+        balanceUi.style.color= "#C42847";
+    }
+    
     balanceUi.innerText= "$" + balance;
 
     resetForm();
@@ -67,6 +78,29 @@ function printResult(){
 
 
 //Añadir listener para submit del formulario
-formCalc.addEventListener("submit", calculateExpense);
+//formCalc.addEventListener("submit", calculateExpense);
 
 
+//validar el form con boostratp
+// Example starter JavaScript for disabling form submissions if there are invalid fields
+(function () {
+    'use strict'
+  
+    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+    var forms = document.querySelectorAll('.needs-validation')
+  
+    // Loop over them and prevent submission
+    Array.prototype.slice.call(forms)
+      .forEach(function (form) {
+        form.addEventListener('submit', function (event) {
+          if (!form.checkValidity()) {
+            event.preventDefault()
+            event.stopPropagation()
+          } else{calculateExpense(event)
+            console.log("pintar data")
+            }
+  
+         form.classList.add('was-validated')
+        }, false)
+      })
+  })()
